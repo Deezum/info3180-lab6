@@ -10,11 +10,12 @@
 </form> 
 
     <ul class="news__list"> 
-        <li v-for="article in articles" class="news__item"> <b>{{ article.title }}</b> <br> <img class = "images" :src = "article.urlToImage" alt = "News article image" /> <br> {{ article.description }} <br><br></li>    
+        <li v-for="article in articles" class="news__item"> <b>{{ article.title }}</b><br>{{ article.author }} <br> <br> <img class = "images" :src = "article.urlToImage" alt = "News article image" /> <br>{{ article.description }} <br> <br><br></li>    
     </ul> 
 </template> 
 
 <script> 
+
 export default {     
     data() {       
         return {
@@ -68,6 +69,7 @@ footer  {
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
 }
+
 
 .news__item {
     border-top: 5px solid rgb(48,129,251);
