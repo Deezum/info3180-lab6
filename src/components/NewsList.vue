@@ -30,7 +30,7 @@ export default {
             let self = this;
 
 
-            fetch('https://newsapi.org/v2/everything?q=' +self.searchTerm + '&language=en&apiKey=faf6c609f6c347a3934bd980365d7270', { 
+            fetch('https://newsapi.org/v2/everything?q=' +self.searchTerm + '&language=en', { 
     headers: {         
         'Authorization': `Bearer ${import.meta.env.VITE_NEWSAPI_TOKEN}`,     
     }
